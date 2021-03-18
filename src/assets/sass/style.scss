@@ -1,34 +1,9 @@
 @import './reset';
-@import './animate';
 @import './fonts';
+@import './animate';
+@import './variables';
 
-// All Colors Variables
-$white: #fff;
-$lower: #8796ae;
-$grey: #eaeff5;
-$dark: #233148;
-$blue: #1f65d9;
-$yellow: #fccf18;
-
-// Responsive Mixins
-@mixin tablet {
-	@media screen and (max-width: 1280px) {
-		@content;
-	}
-}
-@mixin mid {
-	@media screen and (max-width: 991px) {
-		@content;
-	}
-}
-@mixin mobile {
-	@media screen and (max-width: 768px) {
-		@content;
-	}
-}
-
-
-// Main Default Styles
+// DEFAULT STYLES
 body {
 	font-family: 'Proxima Nova', sans-serif;
 	color: $white;
@@ -50,7 +25,7 @@ h3 {
 	overflow: hidden;
 }
 
-// Page Content Styles
+// PAGE CONTENT MAIN STYLES
 .wrapper {
 	max-width: 1232px;
 	width: 100%;
@@ -90,6 +65,7 @@ h3 {
 	
 }
 
+// SOMETHING AS A SERVICE SECTION STYLES 
 .service-section {
 	background: $dark;
 	position: relative;
@@ -170,6 +146,7 @@ h3 {
 	}
 }
 
+// OUR LIGHTPAPER SECTION STYLES
 .lightpaper-section {
 	position: relative;
 	margin-top: -155px;
@@ -292,6 +269,7 @@ h3 {
 		bottom: -38px;
     left: 126px;
 		z-index: 0;
+		transition: .3s;
 		@include mobile {
 			max-width: 280px;
 			height: 54px;
@@ -318,7 +296,8 @@ h3 {
 			transition: .3s;
 		}
 		&:hover {
-			color: #fff;
+			color: $white;
+			transition: .3s;
 		}
 	}
 }

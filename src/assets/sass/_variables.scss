@@ -1,0 +1,24 @@
+// All Colors Variables
+$white: #fff;
+$lower: #8796ae;
+$grey: #eaeff5;
+$dark: #233148;
+$blue: #1f65d9;
+$yellow: #fccf18;
+
+// Responsive Mixins
+@mixin tablet {
+	@media screen and (max-width: 1280px) {
+		@content;
+	}
+}
+@mixin mid {
+	@media screen and (max-width: 991px) {
+		@content;
+	}
+}
+@mixin mobile {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}

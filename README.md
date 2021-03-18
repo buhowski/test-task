@@ -1,7 +1,7 @@
 ## gulp project
 
-run:
-"gulp"
+run watch:
+`gulp`
 
 build:
-"gulp build"
+`gulp build`
