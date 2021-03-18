@@ -1,6 +1,6 @@
 @import './reset';
-@import './fonts';
 @import './animate';
+@import './fonts';
 
 // All Colors Variables
 $white: #fff;
@@ -27,6 +27,7 @@ $yellow: #fccf18;
 	}
 }
 
+
 // Main Default Styles
 body {
 	font-family: 'Proxima Nova', sans-serif;
@@ -46,7 +47,7 @@ h3 {
 	}
 }
 .container {
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 // Page Content Styles
@@ -141,8 +142,11 @@ h3 {
 	}
 	&__icon {
 		margin-bottom: 12px;
+		width: 54px;
+		height: 54px;
 		@include mobile {
 			width: 36px;
+			height: 36px;
 			margin-bottom: 8px;
 		}
 	}
@@ -221,12 +225,10 @@ h3 {
 	}
 	&__pic {
 		right: 5px;
-    top: 72.5%;
-    transform: translateY(-50%);
+    top: -76px;
 		transition: .3s;
 		@include tablet {
 			width: 475px;
-			transform: none;
 			top: -20%;
 			right: -100px;
 		}
@@ -289,17 +291,15 @@ h3 {
 		position: absolute;
 		bottom: -38px;
     left: 126px;
-		transition: .3s;
 		z-index: 0;
 		@include mobile {
-			left: 50%;
-			transform: translateX(-50%);
 			max-width: 280px;
 			height: 54px;
+			left: calc(50% - 140px);
 			bottom: -27px;
 			font-size: 16px;
 			line-height: 19px;
-			letter-spacing: none;
+			letter-spacing: 0;
 		}
 		&:before {
 			content: '';
